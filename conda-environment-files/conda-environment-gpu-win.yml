@@ -1,0 +1,32 @@
+name: dml
+channels:
+- conda-forge
+- defaults
+dependencies:
+- python=3.9
+- pip
+- numpy
+- jupyter
+- matplotlib
+- scikit-learn
+- scipy
+- pandas
+- seaborn
+- nltk
+- h5py
+- spacy
+- unidecode
+- pywin32
+- pip:
+  - future
+  - tb-nightly
+  - gym
+  - pillow
+  - kaggle
+  - ipywidgets
+  - einops
+  - transformers
+  - datasets
+  - --extra-index-url https://download.pytorch.org/whl/cu117
+  - torch==2.0.1+cu117
+  - torchvision==0.15.2+cu117
