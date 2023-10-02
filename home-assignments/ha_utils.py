@@ -18,7 +18,7 @@ def check_notebook_uptodate_and_not_corrupted(nb_dirname, nb_fname):
     # commit = '3d1588a79b1bd6361f6b12da9e6be022adf0f683' # For debug
 
     # Fetch all of these files from server. If the cell IDs of any of them matches the cell IDs of this notebook, check should succeed.
-    nb_fname_candidates = ['HA2-Part1.ipynb', 'HA2-Part2.ipynb'] if os.path.basename(nb_dirname) == 'HA2' else [assignment_name+'.ipynb']
+    nb_fname_candidates = ['HA2-Part.ipynb', 'HA2-Part2.ipynb'] if os.path.basename(nb_dirname) == 'HA2' else [assignment_name+'.ipynb']
 
     nbr_candidate_urls = len(nb_fname_candidates)
     url_candidates = []
